@@ -1,0 +1,26 @@
+
+modLoader="javafml"
+loaderVersion="[38,)"
+license="All rights reserved"
+[[mods]]
+modId="fly_apple"
+version="${file.jarVersion}"
+displayName="Fly Apple Mod"
+logoFile="can_fly_apple.png"
+credits="nothing"
+authors="Javelin_senyu"
+description='''
+In this world, you can eat Fly Apple to FLY!
+'''
+[[dependencies.fly_apple]]
+    modId="forge"
+    mandatory=true
+    versionRange="[38,)"
+    ordering="NONE"
+    side="BOTH"
+[[dependencies.fly_apple]]
+    modId="minecraft"
+    mandatory=true
+    versionRange="[1.18,1.19)"
+    ordering="NONE"
+    side="BOTH"

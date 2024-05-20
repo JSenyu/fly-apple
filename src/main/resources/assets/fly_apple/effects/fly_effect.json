@@ -1,0 +1,11 @@
+{
+  "ambient": true,
+  "duration": 3600,
+  "icon": "textures/mob_effect/fly_effect",
+  "name": "effect.fly_apple.fly_effect",
+  "particles": true,
+  "show_in_hud": true,
+  "show_in_inventory": true,
+  "show_in_minecraft": true,
+  "curative_items": []
+}

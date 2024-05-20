@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "###",
+    "#X#",
+    "###"
+  ],
+  "key": {
+    "#": {
+      "item": "minecraft:feather"
+    },
+    "X": {
+      "item": "minecraft:golden_apple"
+    }
+  },
+  "result": {
+    "item": "fly_apple:can_fly_golden_apple"
+  }
+}
