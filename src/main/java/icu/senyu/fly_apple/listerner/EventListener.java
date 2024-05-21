@@ -19,16 +19,16 @@ public class EventListener {
     public static void onPlayerTick(TickEvent.PlayerTickEvent event) {
 
         Player player = event.player;
-        if(player.isCreative()) return;
+        if (player.isCreative()) return;
 
         MobEffectInstance effectInstance = player.getEffect(EffectRegister.FLY_EFFECT.get());
-        if(effectInstance == null) return;
+        if (effectInstance == null) return;
 
-        if(effectInstance.getDuration() <= 1){
+        if (effectInstance.getDuration() <= 1) {
             player.getAbilities().flying = false;
             player.getAbilities().mayfly = false;
             player.onUpdateAbilities();
-        }else {
+        } else {
             player.getAbilities().mayfly = true;
             player.onUpdateAbilities();
         }
