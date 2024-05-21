@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "###",
+    "#X#",
+    "###"
+  ],
+  "key": {
+    "#": { "item": "minecraft:copper_ingot" },
+    "X": { "item": "fly_apple:bottled_float_essence" }
+  },
+  "result": {
+    "item": "fly_apple:fly_insurance",
+    "count": 1
+  },
+  "result_container": [
+    { "item": "minecraft:glass_bottle", "count": 1 }
+  ]
+}

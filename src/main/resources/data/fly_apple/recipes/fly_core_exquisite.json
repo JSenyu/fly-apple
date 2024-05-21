@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "GFG",
+    "AXA",
+    "CCC"
+  ],
+  "key": {
+    "G": { "item": "minecraft:gold_ingot" },
+    "F": { "item": "minecraft:feather" },
+    "A": { "item": "minecraft:amethyst_shard" },
+    "X": { "item": "fly_apple:fly_core_practical" },
+    "C": { "item": "fly_apple:bottled_float_essence" }
+  },
+  "result": {
+    "item": "fly_apple:fly_core_exquisite",
+    "count": 1
+  },
+  "result_container": [
+    { "item": "minecraft:glass_bottle", "count": 3 }
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "CPC",
+    "GXD",
+    "RRR"
+  ],
+  "key": {
+    "C": { "item": "minecraft:chorus_fruit" },
+    "P": { "item": "minecraft:feather" },
+    "G": { "item": "minecraft:dragon_head" },
+    "D": { "item": "minecraft:elytra" },
+    "X": { "item": "fly_apple:fly_core_mythical" },
+    "R": { "item": "fly_apple:mythical_float_essence" }
+  },
+  "result": {
+    "item": "fly_apple:sky_core",
+    "count": 1
+  }
+}

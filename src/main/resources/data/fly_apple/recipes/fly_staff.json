@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " # ",
+    "#X#",
+    " Y "
+  ],
+  "key": {
+    "#": { "item": "minecraft:feather" },
+    "X": { "item": "fly_apple:fly_core" },
+    "Y": { "item": "minecraft:stick" }
+  },
+  "result": {
+    "item": "fly_apple:fly_staff"
+  }
+}

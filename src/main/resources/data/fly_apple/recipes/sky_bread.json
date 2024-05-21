@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "###",
+    "###"
+  ],
+  "key": {
+    "#": { "item": "fly_apple:sky_wheat" }
+  },
+  "result": {
+    "item": "fly_apple:sky_bread",
+    "count": 1
+  }
+}

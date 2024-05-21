@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "TFT",
+    "IXI",
+    "CCC"
+  ],
+  "key": {
+    "T": { "item": "minecraft:copper_ingot" },
+    "F": { "item": "minecraft:feather" },
+    "I": { "item": "minecraft:iron_ingot" },
+    "X": { "item": "fly_apple:fly_core" },
+    "C": { "item": "fly_apple:bottled_float_essence" }
+  },
+  "result": {
+    "item": "fly_apple:fly_core_practical",
+    "count": 1
+  },
+  "result_container": [
+    { "item": "minecraft:glass_bottle", "count": 3 }
+  ]
+}

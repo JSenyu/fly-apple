@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "#R#",
+    "#X#",
+    "###"
+  ],
+  "key": {
+    "#": { "item": "fly_apple:bottled_float_essence" },
+    "X": { "item": "minecraft:redstone" },
+    "R": { "item": "minecraft:feather" }
+  },
+  "result": {
+    "item": "fly_apple:fly_core",
+    "count": 1
+  },
+  "result_container": [
+    { "item": "minecraft:glass_bottle", "count": 7 }
+  ]
+}

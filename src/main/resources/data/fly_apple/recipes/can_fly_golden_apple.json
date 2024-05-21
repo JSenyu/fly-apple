@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    { "item": "fly_apple:bottled_float_essence" },
+    { "item": "fly_apple:bottled_float_essence" },
+    { "item": "minecraft:golden_apple" },
+    { "item": "fly_apple:fly_core_exquisite" },
+    { "item": "minecraft:feather" }
+  ],
+  "result": {
+    "item": "fly_apple:can_fly_golden_apple"
+  },
+  "result_container": [
+    { "item": "minecraft:glass_bottle", "count": 2 }
+  ]
+}

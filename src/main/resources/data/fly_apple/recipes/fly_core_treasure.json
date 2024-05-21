@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "DFD",
+    "QXQ",
+    "CCC"
+  ],
+  "key": {
+    "D": { "item": "minecraft:diamond" },
+    "F": { "item": "minecraft:feather" },
+    "Q": { "item": "minecraft:quartz" },
+    "X": { "item": "fly_apple:fly_core_collectible" },
+    "C": { "item": "fly_apple:bottled_float_essence" }
+  },
+  "result": {
+    "item": "fly_apple:fly_core_treasure",
+    "count": 1
+  },
+  "result_container": [
+    { "item": "minecraft:glass_bottle", "count": 3 }
+  ]
+}

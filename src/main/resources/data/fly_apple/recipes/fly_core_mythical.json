@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "NFN",
+    "DXD",
+    "CRC"
+  ],
+  "key": {
+    "N": { "item": "minecraft:netherite_ingot" },
+    "D": { "item": "minecraft:diamond" },
+    "F": { "item": "minecraft:feather" },
+    "X": { "item": "fly_apple:fly_core_treasure" },
+    "C": { "item": "fly_apple:bottled_float_essence" },
+    "R": { "item": "fly_apple:mythical_float_essence" }
+  },
+  "result": {
+    "item": "fly_apple:fly_core_mythical",
+    "count": 1
+  },
+  "result_container": [
+    { "item": "minecraft:glass_bottle", "count": 2 }
+  ]
+}
