@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:smithing",
+  "base": {
+    "item": "fly_apple:fly_staff_exquisite"
+  },
+  "addition": {
+    "item": "fly_apple:fly_core_collectible"
+  },
+  "result": {
+    "item": "fly_apple:fly_staff_collectible"
+  }
+}

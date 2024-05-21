@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:smithing",
+  "base": {
+    "item": "fly_apple:fly_staff_mythical"
+  },
+  "addition": {
+    "item": "fly_apple:sky_core"
+  },
+  "result": {
+    "item": "fly_apple:sky_staff"
+  }
+}
