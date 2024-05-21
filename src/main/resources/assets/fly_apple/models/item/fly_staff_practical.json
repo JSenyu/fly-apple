@@ -1,0 +1,6 @@
+{
+  "parent": "item/handheld",
+  "textures": {
+    "layer0": "fly_apple:item/fly_staff_practical"
+  }
+}

@@ -1,0 +1,6 @@
+{
+  "parent": "item/generated",
+  "textures": {
+    "layer0": "fly_apple:item/fly_core_treasure"
+  }
+}
