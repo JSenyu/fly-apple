@@ -1,6 +1,6 @@
 {
   "parent": "item/generated",
   "textures": {
-    "layer0": "fly_apple:item/enchanted_fly_golden_apple"
+    "layer0": "fly_apple:item/can_fly_golden_apple"
   }
 }

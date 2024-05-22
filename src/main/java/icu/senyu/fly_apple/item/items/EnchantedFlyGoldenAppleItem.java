@@ -6,11 +6,14 @@ import net.minecraft.world.effect.MobEffectInstance;
 import net.minecraft.world.effect.MobEffects;
 import net.minecraft.world.food.FoodProperties;
 import net.minecraft.world.item.Item;
+import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.item.Rarity;
+import org.jetbrains.annotations.NotNull;
 
 public class EnchantedFlyGoldenAppleItem extends Item {
 
     public EnchantedFlyGoldenAppleItem() {
-        super(new Properties().tab(FlyAppleMod.TAB).food(
+        super(new Properties().tab(FlyAppleMod.TAB).rarity(Rarity.EPIC).food(
                 new FoodProperties.Builder().nutrition(8).saturationMod(1.2f).alwaysEat().fast()
                         .effect(() -> new MobEffectInstance(EffectRegister.FLY_EFFECT.get(), 7200, 1), 1.0F)
                         .effect(() -> new MobEffectInstance(MobEffects.REGENERATION, 400, 1), 1.0F) // Regeneration for 20 seconds
@@ -21,4 +24,8 @@ public class EnchantedFlyGoldenAppleItem extends Item {
         ));
     }
 
+    @Override
+    public boolean isFoil(@NotNull ItemStack stack) {
+        return true; // 让物品显示为闪闪发光的特效
+    }
 }

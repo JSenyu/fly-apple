@@ -5,11 +5,12 @@ import icu.senyu.fly_apple.effects.EffectRegister;
 import net.minecraft.world.effect.MobEffectInstance;
 import net.minecraft.world.food.FoodProperties;
 import net.minecraft.world.item.Item;
+import net.minecraft.world.item.Rarity;
 
 public class FlyGoldenAppleItem extends Item {
 
     public FlyGoldenAppleItem() {
-        super(new Properties().tab(FlyAppleMod.TAB).food(
+        super(new Properties().tab(FlyAppleMod.TAB).rarity(Rarity.RARE).food(
                 new FoodProperties.Builder().nutrition(6).saturationMod(0.5f).alwaysEat().fast()
                         .effect(() -> new MobEffectInstance(EffectRegister.FLY_EFFECT.get(), 3600, 0), 1.0F)
                         .build()
