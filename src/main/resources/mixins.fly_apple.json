@@ -1,0 +1,11 @@
+{
+  "required": true,
+  "package": "icu.senyu.fly_apple.mixin",
+  "compatibilityLevel": "JAVA_17",
+  "mixins": [
+    "GameModeCommandMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}
