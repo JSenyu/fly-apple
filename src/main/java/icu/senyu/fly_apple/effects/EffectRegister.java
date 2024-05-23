@@ -11,7 +11,6 @@ public class EffectRegister {
 
     public static final DeferredRegister<MobEffect> EFFECTS = DeferredRegister.create(ForgeRegistries.MOB_EFFECTS, FlyAppleMod.MOD_ID);
 
-
     public static final RegistryObject<MobEffect> FLY_EFFECT = EFFECTS.register("fly_effect", FlyEffect::new);
 
 

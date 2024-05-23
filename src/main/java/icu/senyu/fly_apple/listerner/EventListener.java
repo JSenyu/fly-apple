@@ -4,6 +4,7 @@ import icu.senyu.fly_apple.FlyAppleMod;
 import icu.senyu.fly_apple.effects.EffectRegister;
 import icu.senyu.fly_apple.item.ItemRegister;
 import icu.senyu.fly_apple.item.items.FlyInsuranceItem;
+import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.world.damagesource.DamageSource;
 import net.minecraft.world.effect.MobEffectInstance;
 import net.minecraft.world.entity.FlyingMob;
@@ -15,10 +16,12 @@ import net.minecraft.world.entity.boss.wither.WitherBoss;
 import net.minecraft.world.entity.monster.Blaze;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.level.GameType;
 import net.minecraft.world.level.Level;
 import net.minecraftforge.event.TickEvent;
 import net.minecraftforge.event.entity.living.LivingDeathEvent;
 import net.minecraftforge.event.entity.living.LivingDropsEvent;
+import net.minecraftforge.event.entity.player.PlayerEvent;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.common.Mod;
 
@@ -33,16 +36,11 @@ public class EventListener {
         if (player.isCreative()) return;
 
         MobEffectInstance effectInstance = player.getEffect(EffectRegister.FLY_EFFECT.get());
-        if (effectInstance == null) return;
+        if (effectInstance != null) return;
 
-        if (effectInstance.getDuration() <= 1) {
-            player.getAbilities().flying = false;
-            player.getAbilities().mayfly = false;
-            player.onUpdateAbilities();
-        } else {
-            player.getAbilities().mayfly = true;
-            player.onUpdateAbilities();
-        }
+        player.getAbilities().flying = false;
+        player.getAbilities().mayfly = false;
+        player.onUpdateAbilities();
     }
 
 
