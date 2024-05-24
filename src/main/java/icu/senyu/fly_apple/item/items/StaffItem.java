@@ -5,6 +5,8 @@ import icu.senyu.fly_apple.effects.EffectRegister;
 import net.minecraft.world.InteractionHand;
 import net.minecraft.world.InteractionResultHolder;
 import net.minecraft.world.effect.MobEffectInstance;
+import net.minecraft.world.effect.MobEffects;
+import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
@@ -37,7 +39,7 @@ public class StaffItem extends Item {
 
     @Override
     public boolean canBeDepleted() {
-        return true;
+        return false;
     }
 
     @Override
@@ -48,5 +50,11 @@ public class StaffItem extends Item {
     @Override
     public boolean isValidRepairItem(@NotNull ItemStack toRepair, @NotNull ItemStack repair) {
         return repair.getItem() instanceof FlyCoreRepairItem;
+    }
+
+    @Override
+    public boolean hurtEnemy(@NotNull ItemStack stack, @NotNull LivingEntity target, @NotNull LivingEntity attacker) {
+        target.addEffect(new MobEffectInstance(MobEffects.LEVITATION, 40, 0)); // Apply levitation effect for 10 seconds (200 ticks)
+        return super.hurtEnemy(stack, target, attacker);
     }
 }
