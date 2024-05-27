@@ -13,7 +13,7 @@ public class BlockRegister {
     public static final DeferredRegister<Block> BLOCKS = DeferredRegister.create(ForgeRegistries.BLOCKS, FlyAppleMod.MOD_ID);
 
     // Register blocks
-    public static final RegistryObject<Block> SKY_WHEAT = BLOCKS.register("sky_wheat", () -> new SkyWheatBlock(BlockBehaviour.Properties.copy(Blocks.WHEAT)));
+    public static final RegistryObject<Block> SKY_WHEAT = BLOCKS.register("sky_wheat", SkyWheatBlock::new);
 
     // Other blocks...
 }

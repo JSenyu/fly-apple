@@ -7,10 +7,14 @@ import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.level.ItemLike;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.block.Block;
+import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.block.CropBlock;
+import net.minecraft.world.level.block.SoundType;
+import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.block.state.StateDefinition;
 import net.minecraft.world.level.block.state.properties.IntegerProperty;
+import net.minecraft.world.level.material.Material;
 import net.minecraft.world.level.storage.loot.LootContext;
 import net.minecraft.world.phys.shapes.CollisionContext;
 import net.minecraft.world.phys.shapes.VoxelShape;
@@ -34,8 +38,9 @@ public class SkyWheatBlock extends CropBlock {
             Block.box(0.0D, 0.0D, 0.0D, 16.0D, 16.0D, 16.0D)
     };
 
-    public SkyWheatBlock(Properties properties) {
-        super(properties);
+    public SkyWheatBlock() {
+        super(BlockBehaviour.Properties.of(Material.PLANT).noCollission().randomTicks().instabreak().sound(SoundType.CROP));
+        this.registerDefaultState(this.stateDefinition.any().setValue(this.getAgeProperty(), 0));
     }
 
     @Override

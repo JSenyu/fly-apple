@@ -9,12 +9,14 @@ import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
 
-@Mod.EventBusSubscriber(modid = FlyAppleMod.MOD_ID, value = Dist.CLIENT)
+@Mod.EventBusSubscriber(value = Dist.CLIENT, modid = FlyAppleMod.MOD_ID)
 public class ClientBlockRender {
 
     @SubscribeEvent
     public static void onClientSetup(FMLClientSetupEvent event) {
         // 设置方块的渲染层为半透明
-        ItemBlockRenderTypes.setRenderLayer(BlockRegister.SKY_WHEAT.get(), RenderType.cutout());
+        event.enqueueWork(() -> {
+            ItemBlockRenderTypes.setRenderLayer(BlockRegister.SKY_WHEAT.get(), RenderType.cutout());
+        });
     }
 }
