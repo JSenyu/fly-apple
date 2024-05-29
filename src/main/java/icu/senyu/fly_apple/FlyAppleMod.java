@@ -20,6 +20,8 @@ public class FlyAppleMod {
     public FlyAppleMod() {
         IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
 
+        ItemRegister.registerStaffItems();
+
         ItemRegister.ITEMS.register(modEventBus);
         BlockRegister.BLOCKS.register(modEventBus);
         EffectRegister.EFFECTS.register(modEventBus);
