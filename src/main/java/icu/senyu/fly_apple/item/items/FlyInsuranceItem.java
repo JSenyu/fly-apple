@@ -29,7 +29,6 @@ public class FlyInsuranceItem extends Item {
         for (ItemStack stack : player.getInventory().items) {
             if (stack.getItem() instanceof FlyInsuranceItem) {
                 stack.shrink(1); // Reduce the stack size by 1
-                applyEffects(player);
                 spawnParticles(player);
                 grantAdvancement(player);
                 return true;
@@ -38,11 +37,6 @@ public class FlyInsuranceItem extends Item {
         return false;
     }
 
-    private static void applyEffects(Player player) {
-        player.addEffect(new MobEffectInstance(MobEffects.REGENERATION, 900, 1));
-        player.addEffect(new MobEffectInstance(MobEffects.ABSORPTION, 100, 1));
-        player.addEffect(new MobEffectInstance(MobEffects.FIRE_RESISTANCE, 800, 0));
-    }
 
     private static void spawnParticles(Player player) {
         Level level = player.level;
