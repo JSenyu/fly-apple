@@ -26,5 +26,5 @@
   "block.fly_apple.sky_wheat": "Sky Wheat",
   "item.fly_apple.sky_bread": "Sky Bread",
   "item.fly_apple.fly_insurance": "Fly Insurance",
-  "tab.fly_apple.fly_apple": "Fly Apple"
+  "itemGroup.fly_apple": "Fly Apple"
 }

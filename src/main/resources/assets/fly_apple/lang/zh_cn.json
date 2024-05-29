@@ -6,12 +6,12 @@
   "item.fly_apple.float_essence": "漂浮精华",
   "item.fly_apple.mythical_float_essence": "神话漂浮精华",
   "item.fly_apple.bottled_float_essence": "瓶装漂浮精华",
-  "item.fly_apple.fly_staff": "飞行手杖",
-  "item.fly_apple.fly_staff_practical": "飞行手杖-实用",
-  "item.fly_apple.fly_staff_exquisite": "飞行手杖-精致",
-  "item.fly_apple.fly_staff_collectible": "飞行手杖-珍藏",
-  "item.fly_apple.fly_staff_treasure": "飞行手杖-秘宝",
-  "item.fly_apple.fly_staff_mythical": "飞行手杖-神话",
+  "item.fly_apple.fly_staff": "飞行法杖",
+  "item.fly_apple.fly_staff_practical": "飞行法杖-实用",
+  "item.fly_apple.fly_staff_exquisite": "飞行法杖-精致",
+  "item.fly_apple.fly_staff_collectible": "飞行法杖-珍藏",
+  "item.fly_apple.fly_staff_treasure": "飞行法杖-秘宝",
+  "item.fly_apple.fly_staff_mythical": "飞行法杖-神话",
   "item.fly_apple.sky_staff": "天空之杖",
   "item.fly_apple.fly_core": "飞行核心",
   "item.fly_apple.fly_core_practical": "飞行核心-实用",
@@ -25,6 +25,6 @@
   "item.fly_apple.sky_wheat_seeds": "天空小麦种子",
   "block.fly_apple.sky_wheat": "天空小麦",
   "item.fly_apple.sky_bread": "天空面包",
-  "item.fly_apple.fly_insurance": "飞行保险",
-  "tab.fly_apple.fly_apple": "飞行苹果"
+  "item.fly_apple.fly_insurance": "耐摔图腾",
+  "itemGroup.fly_apple": "飞苹果"
 }
