@@ -1,5 +1,6 @@
 {
   "parent": "block/crop",
+  "render_type" : "cutout",
   "textures": {
     "crop": "fly_apple:block/sky_wheat_stage4"
   }
