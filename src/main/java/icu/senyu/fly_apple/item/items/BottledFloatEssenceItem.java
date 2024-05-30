@@ -17,7 +17,7 @@ import org.jetbrains.annotations.NotNull;
 public class BottledFloatEssenceItem extends Item {
 
     public BottledFloatEssenceItem() {
-        super(new Properties().tab(FlyAppleMod.TAB).stacksTo(8));
+        super(new Properties().tab(FlyAppleMod.TAB).stacksTo(8).craftRemainder(Items.GLASS_BOTTLE));
     }
 
     @Override

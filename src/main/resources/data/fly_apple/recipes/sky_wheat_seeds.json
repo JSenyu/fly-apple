@@ -13,8 +13,5 @@
   "result": {
     "item": "fly_apple:sky_wheat_seeds",
     "count": 1
-  },
-  "result_container": [
-    { "item": "minecraft:glass_bottle", "count": 7 }
-  ]
+  }
 }

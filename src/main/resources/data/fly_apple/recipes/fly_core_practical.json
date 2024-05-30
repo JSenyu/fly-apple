@@ -15,8 +15,5 @@
   "result": {
     "item": "fly_apple:fly_core_practical",
     "count": 1
-  },
-  "result_container": [
-    { "item": "minecraft:glass_bottle", "count": 3 }
-  ]
+  }
 }

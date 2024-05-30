@@ -12,8 +12,5 @@
   "result": {
     "item": "fly_apple:fly_insurance",
     "count": 1
-  },
-  "result_container": [
-    { "item": "minecraft:glass_bottle", "count": 1 }
-  ]
+  }
 }

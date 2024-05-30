@@ -8,8 +8,5 @@
   ],
   "result": {
     "item": "fly_apple:can_fly_apple"
-  },
-  "result_container": [
-    { "item": "minecraft:glass_bottle" }
-  ]
+  }
 }

@@ -9,8 +9,5 @@
   ],
   "result": {
     "item": "fly_apple:can_fly_golden_apple"
-  },
-  "result_container": [
-    { "item": "minecraft:glass_bottle", "count": 2 }
-  ]
+  }
 }
