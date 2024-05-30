@@ -2,8 +2,8 @@ package icu.senyu.fly_apple.client;
 
 import icu.senyu.fly_apple.FlyAppleMod;
 import icu.senyu.fly_apple.block.BlockRegister;
-import net.minecraft.client.renderer.RenderType;
 import net.minecraft.client.renderer.ItemBlockRenderTypes;
+import net.minecraft.client.renderer.RenderType;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.common.Mod;
