@@ -6,7 +6,7 @@
     "###"
   ],
   "key": {
-    "#": { "item": "fly_apple:bottled_float_essence" },
+    "#": { "item": "fly_apple:float_essence" },
     "X": { "item": "minecraft:redstone" },
     "F": { "item": "minecraft:feather" }
   },

@@ -1,7 +1,9 @@
 package icu.senyu.fly_apple.item.items;
 
 import icu.senyu.fly_apple.FlyAppleMod;
+import icu.senyu.fly_apple.item.ItemRegister;
 import net.minecraft.advancements.CriteriaTriggers;
+import net.minecraft.client.Minecraft;
 import net.minecraft.core.particles.ParticleTypes;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.server.level.ServerPlayer;
@@ -10,7 +12,11 @@ import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Items;
 import net.minecraft.world.level.Level;
+import net.minecraftforge.api.distmarker.Dist;
+import net.minecraftforge.api.distmarker.OnlyIn;
 import org.jetbrains.annotations.NotNull;
+
+import static net.minecraft.core.particles.ParticleTypes.TOTEM_OF_UNDYING;
 
 public class FlyInsuranceItem extends Item {
 
@@ -39,8 +45,17 @@ public class FlyInsuranceItem extends Item {
     private static void spawnParticles(Player player) {
         Level level = player.level;
         if (level instanceof ServerLevel serverLevel) {
-            serverLevel.sendParticles(ParticleTypes.TOTEM_OF_UNDYING, player.getX(), player.getY() + 1.0D, player.getZ(), 30, 0.5D, 1.0D, 0.5D, 0.0D);
+            serverLevel.sendParticles(TOTEM_OF_UNDYING, player.getX(), player.getY() + 1.0D, player.getZ(), 30, 0.5D, 1.0D, 0.5D, 0.0D);
         }
+        if(level.isClientSide){
+            displayAnimation();
+        }
+    }
+
+    @OnlyIn(Dist.CLIENT)
+    private static void displayAnimation() {
+        Minecraft mc = Minecraft.getInstance();
+        mc.gameRenderer.displayItemActivation(ItemRegister.FLY_INSURANCE.get().getDefaultInstance());
     }
 
     private static void grantAdvancement(Player player) {
