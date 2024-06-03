@@ -4,9 +4,10 @@ import icu.senyu.fly_apple.FlyAppleMod;
 import icu.senyu.fly_apple.item.ItemRegister;
 import net.minecraft.advancements.CriteriaTriggers;
 import net.minecraft.client.Minecraft;
-import net.minecraft.core.particles.ParticleTypes;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.server.level.ServerPlayer;
+import net.minecraft.sounds.SoundEvents;
+import net.minecraft.sounds.SoundSource;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
@@ -46,10 +47,11 @@ public class FlyInsuranceItem extends Item {
         Level level = player.level;
         if (level instanceof ServerLevel serverLevel) {
             serverLevel.sendParticles(TOTEM_OF_UNDYING, player.getX(), player.getY() + 1.0D, player.getZ(), 30, 0.5D, 1.0D, 0.5D, 0.0D);
+
+            // 播放不死图腾的音效
+            serverLevel.playSound(null, player.getX(), player.getY(), player.getZ(), SoundEvents.TOTEM_USE, SoundSource.PLAYERS, 1.0F, 1.0F);
         }
-        if(level.isClientSide){
-            displayAnimation();
-        }
+        displayAnimation();
     }
 
     @OnlyIn(Dist.CLIENT)
