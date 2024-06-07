@@ -20,7 +20,7 @@ public class StaffItem extends Item {
     private final boolean isFoil;
 
     public StaffItem(StaffType staffType) {
-        super(new Properties().tab(FlyAppleMod.TAB).durability(staffType.getMaxDamage() + 1));
+        super(new Properties().tab(FlyAppleMod.TAB).rarity(staffType.getRarity()).durability(staffType.getMaxDamage() + 1));
         this.flyEffectDuration = staffType.getFlyEffectDuration();
         this.cooldownDuration = staffType.getCooldownDuration();
         this.isFoil = staffType.isFoil();
