@@ -12,7 +12,7 @@ apply plugin: 'net.minecraftforge.gradle'
 apply plugin: 'eclipse'
 apply plugin: 'maven-publish'
 
-version = '1.0.1-240603A-build'
+version = '1.0.1-240611A-build'
 group = 'icu.senyu.fly_apple'
 archivesBaseName = 'fly_apple'
 
