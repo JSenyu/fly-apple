@@ -7,7 +7,7 @@ Welcome to my project!
 Thank you for visiting and using this project. If you have any questions or need assistance, please join our communication platforms:
 
 ## QQ群: 970271143
-## Discord频道: https://discord.gg/ktT4Q6v2
+## Discord频道: https://discord.com/invite/K8YqTBZsj8
 
 在这里，你可以找到项目的最新动态、讨论和支持。期待你的加入和参与！
 
